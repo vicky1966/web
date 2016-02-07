@@ -1,0 +1,68 @@
+
+
+<html>
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<title>This is our first project</title>
+<style>
+.jumbotron{
+	position:absolute;
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	background-color:blue;
+	font-family:algerian;
+}
+.form{
+	position:absolute;
+	top:20%;
+	left:10%;
+	height:50%;
+	width:50%;
+	overflow:hidden;
+	background-color:yellow;
+	font-family:algerian;
+}
+</style>
+</head>
+<body>
+	
+	
+<div class="container">
+<div class="jumbotron">
+
+<div class="form"><form action="login.php" method="post">
+
+name :	<br><input type="text" name="name" ><br> 
+PASSWORD: <br><input type="password" name="password" ><br> 
+    
+
+
+
+<?php
+session_start(); // needs to be before anything else on page to use $_SESSION
+    $name = "";
+    
+        $_SESSION['name'] = $_POST['name'];
+    
+
+?>
+
+<br><input type="submit" > 
+</form>
+<button onClick="window.location.href='register.html'">REGISTER </button>
+</div>
+</div></div>
+
+
+
+</body>
+</html>
+
+</html>

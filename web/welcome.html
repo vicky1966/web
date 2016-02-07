@@ -1,0 +1,43 @@
+<html>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<title>Welcome</title>
+
+<body>
+
+<div class="container">
+<div class="jumbotron">
+<img src="C:\Users\vicky\Desktop\schinchan.jpg"/>
+
+<form action="" method="post">
+<h1>Welcome Name:</h1><br>
+
+<input type="radio" name="branch1" value="comp" > COMP<br> 
+<input type="radio" name="branch1" value="mech">MECH<br> 
+<input type="radio" name="branch1" value="entc" > ENTC<br> 
+<input type="radio" name="branch1" value="it">IT<br> 
+<?php
+include("login.php");
+echo $n;
+echo $q;
+echo $a;
+echo $b;
+?>
+
+
+<input type="submit"> 
+</form>
+
+</div></div>
+
+</body>
+
+</html>
+
+<?php
+include("login.php");
+echo $n;
+echo $q;
+echo $a;
+echo $b;
+?>
